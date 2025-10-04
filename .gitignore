@@ -1,0 +1,21 @@
+# Python キャッシュ
+__pycache__/
+*.pyc
+*.pyo
+
+# Django DB（SQLite）
+db.sqlite3
+
+# 環境変数ファイル（秘密キーなど）
+.env
+
+# 仮想環境
+venv/
+.env/
+
+# OSが勝手に作るやつ（Mac）
+.DS_Store
+
+# VSCodeなどIDEの設定
+.vscode/
+.idea/
