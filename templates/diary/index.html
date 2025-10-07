@@ -8,6 +8,7 @@
 <body>
    <h1>シンプル日記</h1>
    <p>{{ datetime_now }}</p>
-    <!-- JavaScript のリンクをここに貼る -->
+    <br>
+    <a href="{% url 'diary:page_create' %}">日記を書く</a>
 </body>
 </html>
