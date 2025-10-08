@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title>シンプル日記</title>
-    </head>
-    <body>
-        <h2>日記を書く</h2>
-        <form method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit">保存</button>
-    </body>
-</html>
+{% extends "base/diary_base.html" %}
+
+{% block body %}
+
+<h2>日記を書く</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">保存</button>
+</form>
+
+{% endblock %}
